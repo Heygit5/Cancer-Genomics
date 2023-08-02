@@ -15,9 +15,9 @@ log2_cpm = log_transform(cpm)
 dummy = log2_cpm
 dummy
 dim(dummy)
-meta_breast = read.csv("design.csv")
-meta_breast
-grp = meta_breast[,'Treatment']
+sample = read.csv("design.csv")
+sample
+grp = sample[,'Treatment']
 grp
 p_values = vector()
 log2_fold_changes <- vector()
